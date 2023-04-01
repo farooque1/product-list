@@ -1,3 +1,11 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 h2 h3 h4 h5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -28,11 +36,111 @@
   color: #61dafb;
 }
 
+a {
+  text-decoration: none !important;
+  color: black !important;
+  font-weight: 400;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+
+
+html,
+body {
+  overflow-x: hidden;
+  /* Prevent scroll on narrow devices */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 56px;
+    /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #343a40;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+  }
+
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+
+
+  }
+}
+
+.nav-scroller .nav {
+  color: rgba(255, 255, 255, .75);
+}
+
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+  color: #6c757d;
+}
+
+.nav-scroller .nav-link:hover {
+  color: #007bff;
+}
+
+.nav-scroller .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.bg-purple {
+  background-color: #6f42c1;
+}
+
+.height {
+  height: 600px;
+}
+
+.active {
+  background-color: #0d6efd;
+  color: aliceblue !important;
+}
+
+#bar-icon{
+  display: block;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .sidebar {
+    /* visibility: hidden; */
+    /* display: none; */
+  }
+
+
+  #bar-icon{
+    display: block;
+  }
+
+  .navbar-collapse {
+    height: 60% !important;
+    width: 100% !important;
+    overflow: auto !important;
+  }
+
+  .height {
+    height: 0px;
   }
 }
